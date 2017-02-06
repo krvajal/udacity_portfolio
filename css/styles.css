@@ -1,6 +1,7 @@
 
 body{
   font-size: 10px;
+  background: #2b2b5f;
 
 }
 
@@ -14,7 +15,9 @@ footer{
   padding: 0;
   padding-top: 20px;
 }
-
+nav{
+  padding: 0 10px;
+}
 h1, h2, h3, h4{
   font-weight: 200;
 }
@@ -30,9 +33,49 @@ p, address{
   font-size: 0.9rem;
   font-style: normal;
 }
+a {
+  color: white;
+}
+
+.banner{
+  position: relative;
+  height: 400px;
+  background:rgba(96,96,222,0.4);
+}
+
+.banner-background{
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: bottom left url("../img/splash2.jpg");
+  background-size: cover;
+  filter: blur(0.1px);
+  background-attachment: fixed;
+}
+.project-info__link,.project-info__title{
+  color: #6060de;
+
+}
 
 
+.brand-logo{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+@media screen and (min-width: 1000px){
+
+  .content{
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+
+}
 
 
 .row{
@@ -50,15 +93,18 @@ p, address{
 
 
 .project-info{
-
+  z-index: 1;
   padding: 50px !important;
+  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4), -4px 0 5px rgba(0, 0, 0, 0.4);
+  background: white;
 }
+
+
 
 .project-thumbnail{
 
   background-size: cover !important;
   min-height: 200px !important;
-  box-shadow: 4px 0 5px rgba(0, 0, 0, 0.4), -4px 0 5px rgba(0, 0, 0, 0.4);
 
 }
 
@@ -80,6 +126,11 @@ p, address{
   background: center center url('http://placehold.it/500x300');
 }
 
-.footer-bottom{
+nav, .footer-bottom{
     background: #2b2b5f;
+}
+.networking-icon{
+
+  width: 60px;
+  height: 60px;
 }
