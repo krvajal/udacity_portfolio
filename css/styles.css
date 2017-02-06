@@ -2,7 +2,7 @@
 body{
   font-size: 10px;
   background: #2b2b5f;
-
+  font-weight: 200;
 }
 
 .banner, footer{
@@ -28,6 +28,9 @@ h1{
 
 h3 {
   font-size: 1.4rem;
+}
+table, ul {
+  font-size: 1.0rem;
 }
 p, address{
   font-size: 0.9rem;
@@ -55,15 +58,19 @@ a {
   filter: blur(0.1px);
   background-attachment: fixed;
 }
-.project-info__link,.project-info__title{
+.project-info__link,.project-info__title, .subsection-title{
   color: #6060de;
-
+  font-weight: 100;
 }
 
 
 .brand-logo{
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.content{
+  background: white;
 }
 
 @media screen and (min-width: 1000px){
@@ -115,15 +122,15 @@ a {
 }
 
 #project1{
-  background: center center url('http://placehold.it/500x300');
+  background: center center url('../img/project1.jpg');
 }
 
 #project2{
-  background: center center url('http://placehold.it/500x300');
+  background: center center url('../img/project2.jpg');
 
 }
 #project3{
-  background: center center url('http://placehold.it/500x300');
+  background: center center url('../img/project3.jpg');
 }
 
 nav, .footer-bottom{
@@ -134,3 +141,67 @@ nav, .footer-bottom{
   width: 60px;
   height: 60px;
 }
+
+.summary{
+
+  padding: 30px;
+  background: #333333;
+  color: white;
+}
+
+#details-section, #experience-section{
+  background: white;
+  padding: 20px;
+
+}
+#details-section{
+  background: white;
+  padding: 10px;
+  padding-left: 50px;
+  box-shadow: 2px 0 10px;
+  z-index: 1;
+}
+
+
+ul.timeline{
+
+
+}
+
+.timeline-marker-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 32px;
+  position: relative;
+}
+.timeline-marker{
+  width: 32px;
+  height: 32px;
+  border: 1px solid #2b2b5f;
+  border-radius: 50%;
+  position: relative;
+  background: rgba(85, 136, 175, 0.4);
+}
+.timeline-marker:before{
+  display: block;
+  content: "";
+  width: 20px;
+  border-radius: 50%;
+  height: 20px;
+  background: #2b2b5f;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+}
+.timeline-marker-wrapper:after{
+  display: block;
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc(100% - 32px);
+  background: #2b2b5f;
+  left: calc(50% - 0.5px);
+  top: 32px;
+}
+
